@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World!!!");
+        string school = "BYU-Idaho";
+        Console.WriteLine($"My school is {school}");
     }
 }
