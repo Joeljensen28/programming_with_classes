@@ -4,7 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        string school = "BYU-Idaho";
-        Console.WriteLine($"My school is {school}");
+        Person person = new Person();
+        person._givenName = "Joseph";
+        person._familyName = "Smith";
+        person.ShowEasternName();
+        person.ShowWesternName();
     }
 }
