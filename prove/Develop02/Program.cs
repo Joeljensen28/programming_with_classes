@@ -112,3 +112,5 @@ class Program
         return newCompleteEntry;
     }
 }
+
+// This exceeded expectations by allowing the user to write an entry with or without a prompt, in case the user had an extraordinary day that didn't need a prompt to make it interesting. In this situation, it would replace the prompt attribute with a single string, "Freewrite".
