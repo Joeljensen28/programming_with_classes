@@ -38,16 +38,4 @@ public class Word
     {
         return _isHidden;
     }
-
-    // Gets the word in raw string format
-    public string GetWord()
-    {
-        return _word;
-    }
-
-    // Sets the word to a string
-    public void SetWord(string updatedWord)
-    {
-        _word = updatedWord;
-    }
 }
