@@ -21,7 +21,7 @@ class Program
         Random random = new();
         int randScriptureIndex = random.Next(0, scriptures.Count);
         Content newCont = scriptures[randScriptureIndex];
-        
+
         // Parse the content into word objects
         newCont.ParseContent();
 
@@ -61,3 +61,7 @@ class Program
         }
     }
 }
+
+// This program exceeds requirements in two ways:
+// 1. Implements more than one scripture which the program randomly chooses from for the user to memorize
+// 2. Uses a method that can tell if a word is hidden or not, and does not choose to hide words that are already hidden
