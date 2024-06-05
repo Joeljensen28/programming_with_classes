@@ -4,10 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Person person = new Person();
-        person._givenName = "Joseph";
-        person._familyName = "Smith";
-        person.ShowEasternName();
-        person.ShowWesternName();
+        while(true)
+        {
+            Console.Write("_\b");
+            Thread.Sleep(100);
+            Console.Write("o\b");
+            Thread.Sleep(100);
+            Console.Write("O\b");
+            Thread.Sleep(200);
+            Console.Write("o\b");
+            Thread.Sleep(100);
+        }
     }
 }
