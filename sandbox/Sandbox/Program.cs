@@ -4,16 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        while(true)
+        List<RoundShape> myList = new List<RoundShape>();
+
+        myList.Add(new Circle(1.0));
+        myList.Add(new Cylinder(1.0, 2.0));
+        myList.Add(new Sphere(1.0));
+        foreach (RoundShape shape in myList)
         {
-            Console.Write("_\b");
-            Thread.Sleep(100);
-            Console.Write("o\b");
-            Thread.Sleep(100);
-            Console.Write("O\b");
-            Thread.Sleep(200);
-            Console.Write("o\b");
-            Thread.Sleep(100);
+            Console.WriteLine(shape.Area());
         }
     }
 }
