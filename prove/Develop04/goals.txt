@@ -1,0 +1,4 @@
+2000
+Goal,Go to the bathroom,Do it,500,True
+EternalGoal,Sleep,Get a goodnights rest sleepyhead,700,False
+ChecklistGoal,Complete this checklist,Complete it,600,True,500,3,3

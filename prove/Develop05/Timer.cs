@@ -28,4 +28,21 @@ public class Timer
             return false;
         }
     }
+
+    public static void Animation(int seconds)
+    {
+        Timer animationTimer = new Timer(seconds);
+        animationTimer.StartTimer();
+        while (animationTimer.TimerActive())
+        {
+            Console.Write("_\b");
+            Thread.Sleep(100);
+            Console.Write("*\b");
+            Thread.Sleep(100);
+            Console.Write("°\b");
+            Thread.Sleep(100);
+            Console.Write("*\b");
+            Thread.Sleep(100);
+        }
+    }
 }
